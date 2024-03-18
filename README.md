@@ -1,1 +1,1 @@
-# Gerenciador de Senhas Ladding Page
+# Gerenciador de Senhas Landing Page
