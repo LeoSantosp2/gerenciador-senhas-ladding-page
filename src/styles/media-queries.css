@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@media all and (max-width: 850px) {
+  .div-screen .smartphone{
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+}
+
+@media all and (max-width: 750px){
+  main{
+    display: block;
+  }
+
+  .div-screen{
+    display: flex;
+  }
+
+  .div-screen .stamp{
+    left: 49%;
+  }
+}
+
+@media all and (max-width: 650px){
+  header{
+    width: 300px;
+    height: 100%;
+    padding: 0px;
+    z-index: 2;
+    flex-direction: column;
+    position: absolute;
+    left: -100%;
+    background-color: #020B26;
+  }
+
+  .header-title{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header #btn-close{
+    display: block;
+  }
+
+  header h1{
+    font-size: 1.2rem;
+    color: #F2F2F2;
+  }
+
+  header i{
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: #F2F2F2;
+  }
+
+  header i:hover{
+    opacity: 0.8;
+  }
+
+  header nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+  }
+
+  header nav a{
+    width: 300px;
+    height: 35px;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+  }
+
+  header nav a:hover{
+    text-decoration: none;
+    background-color: #F2F2F2;
+    color: #020B26;
+  }
+
+  .button{
+    margin: auto;
+    margin-bottom: 15px;
+    border: 1px solid #F2F2F2;
+    color: #F2F2F2;
+  }
+
+  .button:hover{
+    background-color: #F2F2F2;
+    color: #020B26;
+  }
+
+  .header{
+    display: block;
+  }
+}
