@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./src/styles/media-queries.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Gerenciador de Senhas</title>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="./assets/lock-icon.png" alt="Logo do Aplicativo">
+  <header id="header">
+    <div class="header-title">
       <h1>Gerenciador de Senhas</h1>
+      <i class='bx bx-x' id="btn-close"></i>
     </div>
 
     <nav>
@@ -22,6 +25,10 @@
   </header>
 
   <main>
+    <div class="header">
+      <i class='bx bx-menu' id="btn-open"></i>
+    </div>
+
     <div class="resume">
       <p>
         Gerenciador de Senhas, é um app com o intuito do usuário armazenar credenciais de acesso. Pode ser armazenado qualquer dado de acesso.
@@ -30,9 +37,23 @@
     </div>
 
     <div class="div-screen">
-      <img src="./assets/image.png" alt="Imagem da Tela inicial do aplicativo" class="img-screen-phone">
-      <img src="./assets/button-black.png" alt="Botão da Google Play" class="img-button-google-play">
+      <div class="ball"></div>
+
+      <div class="smartphone">
+        <p>Gerenciador de Senhas</p>
+
+        <div class="login">Login</div>
+        <div class="register">Cadastre-se</div>
+      </div>
+
+      <div class="stamp">
+        <img src="./assets/play-store-icon.png" alt="Logo da Play Store">
+
+        <p>Disponivel no <br> <span>Google Play</span></p>
+      </div>
     </div>
   </main>
+
+  <script src="./src/js/script.js"></script>
 </body>
 </html>
