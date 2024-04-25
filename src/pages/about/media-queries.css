@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media all and (max-width: 750px){
+  main{
+    display: block;
+  }
+
+  main .right{
+    padding-top: 30px;
+  }
+
+  main .right img{
+    width: 350px;
+    height: 350px;
+  }
+}
