@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+  --primary: #020b26;
+  --secondary: #F2F2F2;
+  --green: #BBBF36;
+  --red: #F20530;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  background-color: var(--secondary);
+}
+
+header{
+  width: 100%;
+  height: 10%;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header a{
+  font-size: 1rem;
+  font-family: 'tilt Neon', sans-serif;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+header a:hover{
+  text-decoration: underline;
+}
+
+.title{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.title h1{
+  font-size: 2rem;
+  font-family: 'Tilt Neon', sans-serif;
+  color: var(--primary);
+}
+
+main{
+  width: 100%;
+  height: 80%;
+  padding: 0px 20px;
+}
+
+main form{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+main form div{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main form div label{
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-family: 'Tilt Neon', sans-serif;
+  color: var(--primary);
+}
+
+main form div input{
+  width: 400px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  font-family: 'Tilt Neon', sans-serif;
+  outline: none;
+  background-color: var(--secondary);
+}
+
+main form textarea{
+  width: 400px;
+  height: 150px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  font-family: 'Tilt Neon', sans-serif;
+  outline: none;
+  background-color: var(--secondary);
+}
+
+main form button{
+  width: 175px;
+  height: 35px;
+  margin: 20px auto 0px auto;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: 'Tilt Neon', sans-serif;
+  cursor: pointer;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+main form button:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
