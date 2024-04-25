@@ -6,7 +6,7 @@
   --primary: #020b26;
   --secondary: #F2F2F2;
   --green: #BBBF36;
-  --red: #F20530
+  --red: #F20530;
 }
 
 *{
@@ -114,8 +114,7 @@ main{
 }
 
 .resume p{
-  font-size: 1rem;
-  line-height: 1.3rem;
+  font-size: 2rem;
 }
 
 .div-screen{
@@ -195,4 +194,21 @@ main{
 
 .div-screen .stamp p span{
   font-weight: bold;
+}
+
+/*Footer style*/
+footer{
+  width: 100%;
+  height: 5%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+footer p{
+  font-size: 1rem;
+  font-family: 'Tilt Neon', sans-serif;
+  color: var(--secondary);
 }
