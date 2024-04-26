@@ -2,7 +2,7 @@
 
 @media all and (max-width: 750px){
   main{
-    display: block;
+    display: inline;
   }
 
   main .right{

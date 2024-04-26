@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 :root{
-  --primary: #020b26;
+  --primary: #020B26;
   --secondary: #F2F2F2;
   --green: #BBBF36;
   --red: #F20530;
@@ -57,7 +57,7 @@ header nav a:hover{
   text-decoration: underline;
 }
 
-.button{
+header .button{
   width: 80px;
   height: 35px;
   border-radius: 10px;
@@ -71,7 +71,7 @@ header nav a:hover{
   color: var(--primary);
 }
 
-.button:hover{
+header .button:hover{
   background-color: var(--primary);
   color: var(--secondary);
 }
@@ -80,86 +80,84 @@ header nav a:hover{
 main{
   width: 100%;
   height: 90%;
-  display: flex;
 }
 
-.header{
+main .header{
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   display: none;
 }
 
-.header i{
-  font-size: 2rem;
+main .header i{
+  font-size: 1.7rem;
   transition: all 0.3s ease;
   cursor: pointer;
   color: var(--primary);
 }
 
-.header i:hover{
+main .header i:hover{
   opacity: 0.8;
 }
 
-.resume{
+main article{
   width: 100%;
   height: 100%;
+  display: flex;
+}
+
+main article .resume,
+main article .div-screen{
+  width: 100%;
+  height: 100%;
+}
+
+main article .resume{
+  padding: 0px 10px;
+  font-size: 1.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
 }
 
-.resume{
-  padding: 0px 10px;
-}
-
-.resume p{
-  font-size: 2rem;
-}
-
-.div-screen{
-  width: 100%;
-  height: 100%;
+main article .div-screen{
   position: relative;
 }
 
-.div-screen .ball{
+main article .div-screen .ball{
   width: 90%;
   height: 100%;
   border-top-left-radius: 40%;
   border-bottom-left-radius: 40%;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  right: 0%;
   background-color: var(--primary);
 }
 
-.div-screen .smartphone{
-  width: 220px;
-  height: 400px;
+main article .div-screen .smartphone{
+  width: 200px;
+  height: 350px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 30%;
-  left: 40%;
-  transform: translate(-40%, -30%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--secondary);
 }
 
-.div-screen .smartphone p{
-  margin-bottom: 40px;
+main article .div-screen .smartphone p{
+  margin-bottom: 10px;
   font-size: 1rem;
-  color: var(--primary);
 }
 
-.div-screen .smartphone > div{
+main article .div-screen .smartphone div{
   width: 60%;
-  height: 25px;
-  margin-bottom: 5px;
+  height: 30px;
+  margin-bottom: 10px;
   border-radius: 10px;
   font-size: 0.8rem;
   display: flex;
@@ -169,46 +167,35 @@ main{
   color: var(--secondary);
 }
 
-.div-screen .stamp{
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
+main article .div-screen .stamp{
+  width: 125px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 0.7rem;
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 7%;
-  left: 42%;
-  transform: translate(-42%, -7%);
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
   background-color: var(--secondary);
 }
 
-.div-screen .stamp img{
-  width: 30px;
-  height: 30px;
+main article .div-screen .stamp img{
+  width: 25px;
+  height: 25px;
   margin: 0px 10px;
-}
-
-.div-screen .stamp p{
-  font-size: 0.8rem;
-}
-
-.div-screen .stamp p span{
-  font-weight: bold;
 }
 
 /*Footer style*/
 footer{
   width: 100%;
   height: 5%;
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-}
-
-footer p{
-  font-size: 1rem;
-  font-family: 'Tilt Neon', sans-serif;
   color: var(--secondary);
 }

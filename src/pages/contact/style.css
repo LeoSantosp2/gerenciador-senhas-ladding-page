@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 :root{
-  --primary: #020b26;
+  --primary: #020B26;
   --secondary: #F2F2F2;
   --green: #BBBF36;
   --red: #F20530;
@@ -21,6 +21,8 @@ html, body{
 }
 
 body{
+  font-size: 62.5%;
+  font-family: "Tilt Neon", sans-serif;
   background-color: var(--secondary);
 }
 
@@ -34,7 +36,6 @@ header{
 
 header a{
   font-size: 1rem;
-  font-family: 'tilt Neon', sans-serif;
   color: var(--primary);
   text-decoration: none;
 }
@@ -51,7 +52,6 @@ header a:hover{
 
 .title h1{
   font-size: 2rem;
-  font-family: 'Tilt Neon', sans-serif;
   color: var(--primary);
 }
 
@@ -76,7 +76,6 @@ main form div{
 main form div label{
   margin-bottom: 5px;
   font-size: 1rem;
-  font-family: 'Tilt Neon', sans-serif;
   color: var(--primary);
 }
 
@@ -87,7 +86,6 @@ main form div input{
   border-radius: 5px;
   border: 1px solid var(--primary);
   font-size: 1rem;
-  font-family: 'Tilt Neon', sans-serif;
   outline: none;
   background-color: var(--secondary);
 }
@@ -100,7 +98,6 @@ main form textarea{
   border-radius: 5px;
   border: 1px solid var(--primary);
   font-size: 1rem;
-  font-family: 'Tilt Neon', sans-serif;
   outline: none;
   background-color: var(--secondary);
 }
@@ -113,7 +110,6 @@ main form button{
   border: 1px solid var(--primary);
   transition: all 0.3s ease;
   font-size: 1rem;
-  font-family: 'Tilt Neon', sans-serif;
   cursor: pointer;
   background-color: var(--secondary);
   color: var(--primary);
