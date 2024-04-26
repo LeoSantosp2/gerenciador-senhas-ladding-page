@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+  --primary: #020B26;
+  --secondary: #F2F2F2;
+  --green: #BBBF36;
+  --red: #F20530;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body{
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  font-size: 62.5%;
+  font-family: "Tilt Neon", sans-serif;
+  background-color: var(--secondary);
+}
+
+/*Header style*/
+header{
+  width: 100%;
+  height: 10%;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+header a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+header a:hover{
+  text-decoration: underline;
+}
+
+/*Main style*/
+main{
+  width: 100%;
+  padding: 0px 10px;
+  text-align: justify;
+  color: var(--primary);
+}
+
+main h1{
+  font-size: 1.8rem;
+}
+
+main p{
+  margin: 15px 0px;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+main p a{
+  color: var(--primary);
+}
+
+main ul, ol{
+  margin-left: 40px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+main h2{
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+main .term-three-list{
+  margin-top: 15px;
+}
+
+main h3{
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
