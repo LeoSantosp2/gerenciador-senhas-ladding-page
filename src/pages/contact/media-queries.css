@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media all and (max-width: 650px){
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main form{
+    width: 90%;
+  }
+
+  main form div input{
+    width: 100%;
+  }
+
+  main form textarea{
+    width: 100%;
+  }
+}
