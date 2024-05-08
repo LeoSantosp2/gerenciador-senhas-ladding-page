@@ -45,71 +45,207 @@ header a:hover{
   text-decoration: underline;
 }
 
-.title{
-  width: 100%;
-  height: 10%;
-  padding-left: 20px;
-  text-align: center;
-}
-
-.title h1{
-  font-size: 2rem;
-  color: var(--primary);
-}
-
 /*Main style*/
 main{
   width: 100%;
-  height: 80%;
-  display: flex;
-}
-
-.left,
-.right{
-  width: 100%;
-}
-
-main .left{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main .left .article{
-  width: 100%;
-  margin-top: 20px;
-  padding: 0px 10px;
-  text-align: justify;
-}
-
-main .left .article p{
-  margin-bottom: 30px;
-  font-size: 1rem;
-  line-height: 1.3rem;
-  text-align: justify;
+  height: 90%;
   color: var(--primary);
 }
 
-main .left .article span{
-  font-size: 1rem;  
+main .about{
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
-main .right{
+main .about .article,
+main .about .logo{
+  width: 100%;
+  height: 90%;
+}
+
+main .title{
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+main .title h1{
+  font-size: 2rem;
+  margin-left: 15px;
+}
+
+main .about .article{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main .right img{
+main .about .article p{
+  margin-top: 10px;
+  padding: 0px 20px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+main .about .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .about .logo img{
   width: 400px;
   height: 400px;
+}
+
+/*aside style*/
+aside{
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  color: var(--primary);
+}
+
+aside .slides{
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+aside .slides .slide{
+  width: 33.33%;
+  padding-left: 20px;
+  transition: all 0.6s ease;
+}
+
+aside .slides .slide .title{
+  width: 100%;
+  height: 5%;
+  padding-top: 10px;
+}
+
+aside .slides .slide .title h1{
+  font-size: 1.7rem;
+}
+
+aside .slides .slide .content{
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+aside .slides .slide .content h2{
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+aside .slides .slide .content p{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+aside .slides .slide .content .explain{
+  padding-left: 30px;
+}
+
+aside .slides .slide .content ul{
+  padding-left: 50px;
+  font-size: 1rem;
+}
+
+aside .slides .slide .content ul li{
+  margin-bottom: 10px;
+}
+
+aside .slides .slide .content a{
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+aside .slides .slide .content a:hover{
+  text-decoration: none;
+}
+
+aside .left i,
+aside .right i{
+  font-size: 2rem;
+}
+
+aside .left{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translate(-1%, -50%);
+  cursor: pointer;
+}
+
+aside .left:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+aside .right{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(-1%, -50%);
+  cursor: pointer;
+}
+
+aside .right:hover{
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+aside .slide-bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+}
+
+aside .slide-bar .bar{
+  width: 25px;
+  height: 25px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+
+aside .slide-bar .current-bar{
+  transition: all 0.5s ease;
+  background-color: var(--primary);
 }
 
 /*Footer style*/
 footer{
   width: 100%;
   height: 5%;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 1rem;
   display: flex;
   justify-content: center;

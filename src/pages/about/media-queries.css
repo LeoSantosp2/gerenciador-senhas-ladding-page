@@ -1,16 +1,54 @@
 @charset "UTF-8";
 
 @media all and (max-width: 750px){
-  main{
-    display: inline;
+  main .about{
+    display: block;
   }
 
-  main .right{
-    padding-top: 30px;
+  main .about .article,
+  main .about .logo{
+    height: 40%;
   }
 
-  main .right img{
-    width: 350px;
-    height: 350px;
+  main .about .logo img{
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media all and (max-width: 650px){
+  aside .slides .slide{
+    padding-right: 20px;
+  }
+
+  aside .slides .slide .title{
+    padding-bottom: 10px;
+  }
+
+  aside .slides .slide .content h2{
+    padding-left: 5px;
+  }
+
+  aside .slides .slide .content .explain{
+    padding-left: 15px;
+  }
+
+  aside .slide-bar{
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  aside .slides .slide .content ul{
+    padding-left: 30px;
+  }
+
+  aside .slide-bar .bar{
+    width: 20px;
+    height: 20px;
+  }
+
+  footer{
+    margin-top: 20px;
   }
 }
