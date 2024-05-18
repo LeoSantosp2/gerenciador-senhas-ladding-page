@@ -45,13 +45,6 @@ header a:hover{
   text-decoration: underline;
 }
 
-header h1{
-  margin: auto;
-  font-size: 2rem;
-  font-family: 'Tilt Neon', sans-serif;
-  color: var(--primary);
-}
-
 /*Main style*/
 main{
   width: 100%;
