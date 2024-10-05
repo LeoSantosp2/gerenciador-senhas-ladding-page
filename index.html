@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,27 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Gerenciador de Senhas</title>
 </head>
+
 <body>
   <header id="header">
-    <div class="header-title">
-      <h1>Gerenciador de Senhas</h1>
-      <i class='bx bx-x' id="btn-close"></i>
+    <div class="container">
+      <div class="left-side">
+        <h1>Gerenciador de Senhas</h1>
+
+        <i class='bx bx-x' id="btn-close"></i>
+      </div>
+
+      <nav>
+        <a href="./src/pages/about/index.html">Sobre</a>
+        <a href="./src/pages/contact/index.html">Contato</a>
+        <a href="./src/pages/privacy/index.html">Privacidade</a>
+      </nav>
+
+      <div class="download">
+        <a href="https://play.google.com/store/apps/details?id=com.gerenciadorsenhas.gerenciadordesenhas"
+          target="_blank" class="button">Baixar</a>
+      </div>
     </div>
-
-    <nav>
-      <a href="./src/pages/about/index.html">Sobre</a>
-      <a href="./src/pages/contact/index.html">Contato</a>
-      <a href="./src/pages/privacy/index.html">Privacidade</a>
-    </nav>
-
-    <a href="https://play.google.com/store/apps/details?id=com.gerenciadorsenhas.gerenciadordesenhas" target="_blank" class="button">Baixar</a>
   </header>
 
   <main>
@@ -32,35 +40,41 @@
 
     <article>
       <div class="resume">
-        <p>
-          Bem-vindo ao Gerenciador de Senhas, sua solução completa para proteger e organizar suas informações
-          confidenciais de maneira segura e conveniente.
-        </p>
+        <p>Bem-vindo ao Gerenciador de Senhas, sua solução completa para proteger e organizar suas informações
+          confidenciais de maneira segura e conveniente.</p>
       </div>
 
-      <div class="div-screen">
-        <div class="ball"></div>
-  
-        <div class="smartphone">
-          <p>Gerenciador de Senhas</p>
-  
-          <div class="login">Login</div>
-          <div class="register">Cadastre-se</div>
-        </div>
-  
-        <div class="stamp">
-          <img src="./assets/play-store-icon.png" alt="Logo da Play Store">
-  
-          <p>Disponivel no <br> <span>Google Play</span></p>
+      <div class="art">
+        <div class="ball">
+          <div class="smartphone">
+            <h1>Gerenciador de Senhas</h1>
+
+            <div class="button">
+              <p>Login</p>
+            </div>
+
+            <div class="button">
+              <p>Cadastre-se</p>
+            </div>
+          </div>
+
+          <div class="stamp">
+            <img src="./assets/play-store-icon.png" alt="Logo da Play Store">
+
+            <p>Disponível na <br> <span>Google Play</span></p>
+          </div>
         </div>
       </div>
     </article>
   </main>
-  
+
   <footer>
-    <p>Feito por Leonardo S de Paulo</p>
+    <div class="container">
+      <p>Feito por Leonardo S de Paulo</p>
+    </div>
   </footer>
 
   <script src="./src/js/script.js"></script>
 </body>
+
 </html>
